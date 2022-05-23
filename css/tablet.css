@@ -1,0 +1,38 @@
+/* MEDIA QUERIES */
+
+/* tablet */
+
+@media(min-width: 1001px){
+
+    /* main */
+
+    .container-seccion1-seccion2{
+        flex-direction: row;
+    }
+
+    /* seccion 1 */
+
+    .container-seccion1-seccion2__container-seccion1-titulo-login{
+        margin: 0;
+        order: 2;
+        width: 55%;
+    }
+
+    /* seccion 2 imagen - icono */
+
+    .container-seccion1-seccion2__container-seccion2-imagen-icono{
+        order: 1;
+        width: 45%;
+    }
+
+    /* imagen */
+
+    .container-seccion1-seccion2__container-seccion2-imagen{
+        height: 100%;
+    }
+
+    .container-seccion1-seccion2__seccion2-icono{
+        font-size: 35rem;
+    }
+
+}

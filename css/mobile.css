@@ -1,0 +1,30 @@
+/* MEDIA QUERIES */
+
+/* mobile */
+
+@media(min-width: 501px){
+
+    /* titulo y subtitulo */
+
+    .container-seccion1-seccion2__seccion1-titulo{
+        font-size: 6.4rem;
+        line-height: 9rem;
+    }
+
+    .container-seccion1-seccion2__seccion1-subtitulo{
+        font-size: 3.4rem;
+        line-height: 3.8rem;
+    }
+
+}
+
+@media(min-width: 601px){
+
+    /* seccion 1 */
+
+    .container-seccion1-seccion2__container-seccion1-titulo-login{
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+}
