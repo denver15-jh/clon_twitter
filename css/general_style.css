@@ -8,12 +8,12 @@
 
     --color-transparent: transparent;
     --black-strong: black;
-    --black-opacity-uno: rgba(0,0,0,0.1);
-    --white-standard: white;
+    --gray-light-1: rgb(207, 217, 222);
+    --gray-light-2: rgb(239, 243, 244);
     --gray-strong: gray;
-    --gray-middel: #dfe1e5;
-    --gray-opacity-uno: rgba(60,64,67,0.08);
-
+    --blue-middel: rgb(29, 155, 240);
+    --white-standard: white;
+    
 }
 
 *{
@@ -64,7 +64,7 @@ body{
 
 .container-seccion1-seccion2__seccion1-icono{
     font-size: 4.5rem;
-    color: rgb(29, 155, 240);
+    color: var(--blue-middel);
 }
 
 /* titulo y subtitulo */
@@ -102,7 +102,7 @@ body{
     align-items: center;
     height: 5rem;
     font-size: 1.5rem; 
-    border: 0.1rem solid rgb(207, 217, 222);
+    border: 0.1rem solid var(--gray-light-1);
     border-radius: 5rem;
     margin: 1rem 0;
     padding: 1rem;
@@ -110,8 +110,8 @@ body{
 }
 
 .container-seccion1-seccion2__container-phone-email--change-color-boton-phone-email{
-    background-color: rgb(29, 155, 240);
-    border: 01.rem solid var(--color-transparent);
+    background-color: var(--blue-middel);
+    border: 0.1rem solid var(--color-transparent);
 }
 
 .container-seccion1-seccion2__imagen-google, .container-seccion1-seccion2__imagen-apple{
@@ -144,7 +144,7 @@ body{
 .container-seccion1-seccion2__container-phone-email--change-color-titulo-login{
     font-weight: bolder;
     font-size: 1.5rem;
-    color: rgb(29, 155, 240);
+    color: var(--blue-middel);
 }
 
 /* hr */
@@ -157,8 +157,8 @@ body{
 }
 
 .container-seccion1-seccion2__hr1, .container-seccion1-seccion2__hr2{
-    background-color: rgb(239, 243, 244);
-    border: 0.1rem solid rgb(239, 243, 244);;
+    background-color: var(--gray-light-2);
+    border: 0.1rem solid var(--gray-light-2);
     width: 100%;
     margin: 0 0.5rem;
 }
@@ -177,11 +177,11 @@ body{
 
 .container-seccion1-seccion2__terminos, .container-seccion1-seccion2__span-terminos{
     font-size: 1.1rem;
-    color: gray;
+    color: var(--gray-strong);
 }
 
 .container-seccion1-seccion2__span-terminos{
-    color: rgb(29, 155, 240);
+    color: var(--blue-middel);
 }
 
 /* login */
@@ -248,7 +248,7 @@ body{
 .footer-container__li-container-links{
     list-style: none;
     margin: 0.4rem 1.6rem 0.4rem 0;
-    color: gray;
+    color: var(--gray-strong);
 }
 
 /* links */ 
@@ -256,7 +256,7 @@ body{
 .footer-container__links{
     text-decoration: none;
     cursor: pointer;
-    color: gray;
+    color: var(--gray-strong);
     white-space: nowrap;
     font-size: 1.3rem;
 }
