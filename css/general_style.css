@@ -400,6 +400,10 @@ body{
     content: "";
 }
 
+.container-modal-phone-email__input-date::-webkit-calendar-picker-indicator{
+    display: none;
+}
+
 .container-modal-phone-email__input-date-mes--padding-flecha, .container-modal-phone-email__input-date-dia--padding-flecha, 
 .container-modal-phone-email__input-date-ano--padding-flecha{
     padding: 2rem;
