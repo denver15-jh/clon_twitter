@@ -357,16 +357,25 @@ body{
     width: 100%;
 }
 
-.container-modal-phone-email__container-input-name, .container-modal-phone-email__container-input-email, .container-modal-phone-email__container-input-date-mes, .container-modal-phone-email__container-input-date-dia, .container-modal-phone-email__container-input-date-ano {
+.container-modal-phone-email__container-input-name, .container-modal-phone-email__container-input-email,
+.container-modal-phone-email__container-input-date, .container-modal-phone-email__container-input-date-mes, 
+.container-modal-phone-email__container-input-date-dia, .container-modal-phone-email__container-input-date-ano {
     position: relative;
     margin: 10px 0;
 }
 
-.container-modal-phone-email__container-input-date-mes, .container-modal-phone-email__container-input-date-dia, .container-modal-phone-email__container-input-date-ano{
+.container-modal-phone-email__container-input-date{
+    display: block;
+}
+
+.container-modal-phone-email__container-input-date-mes, .container-modal-phone-email__container-input-date-dia, 
+.container-modal-phone-email__container-input-date-ano{
     width: 100%;
 }
 
-.container-modal-phone-email__input-name, .container-modal-phone-email__input-phone-email, .container-modal-phone-email__input-date-mes, .container-modal-phone-email__input-date-dia, .container-modal-phone-email__input-date-ano {
+.container-modal-phone-email__input-name, .container-modal-phone-email__input-phone-email, 
+.container-modal-phone-email__input-date, .container-modal-phone-email__input-date-mes, 
+.container-modal-phone-email__input-date-dia, .container-modal-phone-email__input-date-ano {
     background: none;
     color: var(--gray-light-2);
     font-size: 1.8rem;
@@ -378,7 +387,21 @@ body{
     color: var(--black-strong);
 }
 
-.container-modal-phone-email__input-date-mes--padding-flecha, .container-modal-phone-email__input-date-dia--padding-flecha, .container-modal-phone-email__input-date-ano--padding-flecha{
+
+.container-modal-phone-email__input-date {
+    color: var(--white-standard);
+}
+  
+.container-modal-phone-email__input-date:focus, .container-modal-phone-email__input-date:valid {
+    color: var(--black-strong);
+}
+  
+.container-modal-phone-email__input-date:focus::before, .container-modal-phone-email__input-date:valid::before {
+    content: "";
+}
+
+.container-modal-phone-email__input-date-mes--padding-flecha, .container-modal-phone-email__input-date-dia--padding-flecha, 
+.container-modal-phone-email__input-date-ano--padding-flecha{
     padding: 2rem;
 }
 
@@ -454,12 +477,12 @@ label {
     font-size: 1.4rem;
 }
 
-.container-modal-phone-email__container-select-date{
-    display: flex;
+.container-modal-phone-email__container-svg-select-option{
+    display: none;
     position: relative;
 }
 
-.container-modal-phone-email__container-select-date svg{
+.container-modal-phone-email__container-svg-select-option svg{
     position: absolute;
     right: 4px;
     top: 22px;
