@@ -400,7 +400,7 @@ body{
     content: "";
 }
 
-.container-modal-phone-email__input-date::-webkit-calendar-picker-indicator{
+.container-modal-phone-email__input-date::-webkit-calendar-picker-indicator, .container-modal-phone-email__input-date::-webkit-inner-spin-button{
     display: none;
 }
 
