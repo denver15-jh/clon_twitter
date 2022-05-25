@@ -508,10 +508,11 @@ select {
 .container-modal-phone-email__redirect-boton-siguiente--disable-boton-siguiente{
     cursor: default;
     pointer-events: none;
+    opacity: 0.5;
 }
 
 .container-modal-phone-email__redirect-boton-siguiente--active-boton-siguiente{
     cursor: pointer;
     pointer-events:visible;
-    opacity: 0.5;
+    opacity: 1;
 }
