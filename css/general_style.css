@@ -400,12 +400,15 @@ body{
     content: "";
 }
 
+.container-modal-phone-email__input-date{
+    -webkit-appearance: none;
+}
+
 .container-modal-phone-email__input-date::-webkit-calendar-picker-indicator, 
 .container-modal-phone-email__input-date::-webkit-inner-spin-button,
 .container-modal-phone-email__input-date::-webkit-outer-spin-button{
     display: none;
     -webkit-appearance: none;
-    opacity: 0;
 }
 
 .container-modal-phone-email__input-date-mes--padding-flecha, .container-modal-phone-email__input-date-dia--padding-flecha, 
