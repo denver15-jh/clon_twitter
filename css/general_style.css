@@ -406,6 +406,13 @@ body{
     opacity: 0;
 }
 
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+    opacity: 0;
+}
+
 .container-modal-phone-email__input-date-mes--padding-flecha, .container-modal-phone-email__input-date-dia--padding-flecha, 
 .container-modal-phone-email__input-date-ano--padding-flecha{
     padding: 2rem;
