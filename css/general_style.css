@@ -402,6 +402,7 @@ body{
 
 .container-modal-phone-email__input-date::-webkit-calendar-picker-indicator, .container-modal-phone-email__input-date::-webkit-inner-spin-button{
     display: none;
+    -webkit-appearance: none;
 }
 
 .container-modal-phone-email__input-date-mes--padding-flecha, .container-modal-phone-email__input-date-dia--padding-flecha, 
