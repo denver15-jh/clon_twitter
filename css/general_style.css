@@ -513,4 +513,5 @@ select {
 .container-modal-phone-email__redirect-boton-siguiente--active-boton-siguiente{
     cursor: pointer;
     pointer-events:visible;
+    opacity: 0.5;
 }
