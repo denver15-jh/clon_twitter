@@ -59,9 +59,6 @@
     .container-modal-phone-email__container-svg-select-option{
         display: flex;
     }
-    .container-modal-phone-email__container-svg-select-option svg{
-        display: block;
-    }
 
     .container-modal-phone-email__footer-container-formulario-modal{
         position: static;

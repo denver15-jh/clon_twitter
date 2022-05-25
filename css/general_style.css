@@ -489,7 +489,6 @@ label {
     width: 16px;
     pointer-events: none;
     fill: var(--gray-strong);
-    display: none;
 }
 
 select {
