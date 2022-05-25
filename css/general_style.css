@@ -8,12 +8,13 @@
 
     --color-transparent: transparent;
     --black-strong: black;
+    --black-opacity-1:rgba(91, 112, 131, 0.4);
+    --gray-strong: gray;
     --gray-light-1: rgb(207, 217, 222);
     --gray-light-2: rgb(239, 243, 244);
-    --gray-strong: gray;
-    --blue-middel: rgb(29, 155, 240);
     --white-standard: white;
-    
+    --blue-middel: rgb(29, 155, 240);
+
 }
 
 *{
@@ -92,11 +93,11 @@ body{
 
 /* social - botones */
 
-.container-seccion1-seccion2__redirect-google, .container-seccion1-seccion2__redirect-apple, .container-seccion1-seccion2__redirect-phone-email, .container-seccion1-seccion2__redirect-login{
+.container-seccion1-seccion2__redirect-google, .container-seccion1-seccion2__redirect-apple, .container-seccion1-seccion2__redirect-phone-email, .container-seccion1-seccion2__redirect-login, .container-modal-phone-email__redirect-boton-siguiente{
     text-decoration: none;
 }
 
-.container-seccion1-seccion2__container-google, .container-seccion1-seccion2__container-apple, .container-seccion1-seccion2__container-phone-email, .container-seccion1-seccion2__container-login{
+.container-seccion1-seccion2__container-google, .container-seccion1-seccion2__container-apple, .container-seccion1-seccion2__container-phone-email, .container-seccion1-seccion2__container-login, .container-modal-phone-email__container-boton-siguiente{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -120,7 +121,7 @@ body{
     margin-right: 1rem;
 }
 
-.container-seccion1-seccion2__titulo-google, .container-seccion1-seccion2__titulo-apple, .container-seccion1-seccion2__titulo-phone-email, .container-seccion1-seccion2__titulo-login{
+.container-seccion1-seccion2__titulo-google, .container-seccion1-seccion2__titulo-apple, .container-seccion1-seccion2__titulo-phone-email, .container-seccion1-seccion2__titulo-login, .container-modal-phone-email__titulo-boton-siguiente{
     margin-left: 0rem;
     color: var(--black-strong);
     text-align: center;
@@ -263,4 +264,253 @@ body{
 
 .footer-container__links:hover{
     text-decoration: underline;
+}
+
+/* MODAL REGISTRATE PASO 1 */
+
+.container-modal-phone-email{
+    background-color: var(--black-opacity-1);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 1s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+.container-modal-phone-email__container-formulario{
+    background-color:black;
+    width: 100%;
+    /*width: 600px;*/
+    height: 100%;
+    /*height: none;*/
+  }
+
+  #container-modal-phone-email:target{
+    opacity: 1;
+    pointer-events: auto;
+  }
+
+/* header modal */
+
+  .container-modal-phone-email__header-close-logo{
+    position: relative;
+    background-color: var(--white-standard);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* iconos header */
+
+.container-modal-phone-email__container-icono-header-modal{
+    position: absolute;
+    left: 1rem;
+    /*border: 1px solid blue;*/
+    height: 3.5rem;
+    width: 3.5rem;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.container-modal-phone-email__icono-header-modal{
+    font-size: 2rem;
+    color: var(--black-strong);
+}
+
+.container-modal-phone-email__icono-logo-header-modal{
+    font-size: 3rem;
+    color: var(--blue-middel);
+}
+
+/* body modal */
+
+.container-modal-phone-email__body-container-formulario-modal{
+    background-color: var(--white-standard);
+    overflow: auto;
+    height: 100vh;
+    /*height: 60vh;*/
+}
+
+.container-modal-phone-email__container-formulario-modal{
+    padding: 0 3.2rem 14rem 3.2rem;
+}
+
+.container-modal-phone-email__container-titulo-formulario{
+    margin: 2.8rem 0;
+}
+.container-modal-phone-email__titulo-formulario{
+    color: var(--black-strong);
+    font-size: 2.6rem;
+}
+
+.container-modal-phone-email__form-registrate{
+    width: 100%;
+}
+
+.container-modal-phone-email__container-input-name, .container-modal-phone-email__container-input-email, .container-modal-phone-email__container-input-date-mes, .container-modal-phone-email__container-input-date-dia, .container-modal-phone-email__container-input-date-ano {
+    position: relative;
+    margin: 10px 0;
+}
+
+.container-modal-phone-email__container-input-date-mes, .container-modal-phone-email__container-input-date-dia, .container-modal-phone-email__container-input-date-ano{
+    width: 100%;
+}
+
+.container-modal-phone-email__input-name, .container-modal-phone-email__input-phone-email, .container-modal-phone-email__input-date-mes, .container-modal-phone-email__input-date-dia, .container-modal-phone-email__input-date-ano {
+    background: none;
+    color: var(--gray-light-2);
+    font-size: 1.8rem;
+    padding: 2rem 1rem;
+    width: 100%;
+    border: none;
+    border-radius: 0.5rem;
+    border: 0.2rem solid var(--gray-light-2);
+    color: var(--black-strong);
+}
+
+.container-modal-phone-email__input-date-mes--padding-flecha, .container-modal-phone-email__input-date-dia--padding-flecha, .container-modal-phone-email__input-date-ano--padding-flecha{
+    padding: 2rem;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border: 0.2rem solid #2196f3;
+    transition: 300ms ease all;
+}
+
+input:focus ~ label, select:focus ~ label  {
+    top: 5px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+input:valid ~ label, select:valid ~ label {
+    top: 5px;
+    font-size: 12px;
+    color: #2196f3;
+}
+
+.container-modal-phone-email__container-input-contador {
+    color: transparent;
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    transition: 300ms ease all;
+}
+
+input:focus ~ .container-modal-phone-email__container-input-contador {
+    color: var(--black-strong);
+    position: absolute;
+    top: 4px;
+    right: 10px;
+    transition: 300ms ease all;
+    color: var(--gray-strong);
+}
+
+label {
+    color: var(--gray-strong);
+    font-size: 1.6rem;
+    font-weight: normal;
+    position: absolute;
+    pointer-events: none;
+    left: 1rem;
+    top: 2.2rem;
+    transition: 300ms ease all;
+}
+
+.container-modal-phone-email__container-cambio-phone-email{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    cursor: pointer;
+}
+.container-modal-phone-email__cambio-phone-email{
+    font-size: 1.5rem;
+    color: var(--blue-middel);
+}
+
+.container-modal-phone-email__container-titulo-date{
+    margin-bottom: 0.8rem;
+}
+
+.container-modal-phone-email__titulo-date{
+    color: var(--black-strong);
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.container-modal-phone-email__info-date{
+    color: var(--gray-strong);
+    font-size: 1.4rem;
+}
+
+.container-modal-phone-email__container-select-date{
+    display: flex;
+    position: relative;
+}
+
+.container-modal-phone-email__container-select-date svg{
+    position: absolute;
+    right: 4px;
+    top: 22px;
+    width: 16px;
+    pointer-events: none;
+    fill: var(--gray-strong);
+}
+
+select {
+    border: solid 1px #000;
+    appearance:none;
+        -moz-appearance:none;
+        -webkit-appearance:none;
+    background: url("https://raw.githubusercontent.com/ourjs/static/gh-pages/2015/arrow.png") no-repeat scroll right center transparent;
+}
+
+.container-modal-phone-email__container-input-date-mes--margen, .container-modal-phone-email__container-input-date-dia--margen{
+    margin-right: 1.2rem;
+}
+
+.container-modal-phone-email__footer-container-formulario-modal{
+    background-color: var(--white-standard);
+    height: 100px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.container-modal-phone-email__container-boton-footer-formulario-modal{
+    padding: 2.4rem 3.2rem;
+}
+
+.container-modal-phone-email__container-boton-siguiente--change-color-boton-siguiente{
+    background-color: var(--black-strong);
+    border: 0.1rem solid var(--color-transparent);
+    margin: 0;
+}
+
+.container-modal-phone-email__titulo-boton-siguiente--change-color-titulo-siguiente{
+    font-weight: bolder;
+    font-size: 1.5rem;
+    color: var(--white-standard);
+}
+
+.container-modal-phone-email__redirect-boton-siguiente--disable-boton-siguiente{
+    cursor: default;
+    pointer-events: none;
+}
+
+.container-modal-phone-email__redirect-boton-siguiente--active-boton-siguiente{
+    cursor: pointer;
+    pointer-events:visible;
 }

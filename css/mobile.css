@@ -28,3 +28,34 @@
     }
 
 }
+
+@media(min-width: 688px){
+
+    /* MODAL */
+
+    .container-modal-phone-email__container-formulario{
+        height: auto;
+        width: 60rem;
+        border-radius: 1.5rem;
+    }
+
+    .container-modal-phone-email__header-close-logo{
+        border-top-right-radius: 1.5rem;
+        border-top-left-radius: 1.5rem;
+    }
+
+    .container-modal-phone-email__body-container-formulario-modal{
+        height: 60vh;
+    }
+
+    .container-modal-phone-email__container-formulario-modal{
+        padding: 0 3.2rem;
+    }
+
+    .container-modal-phone-email__footer-container-formulario-modal{
+        position: static;
+        border-bottom-right-radius: 1.5rem;
+        border-bottom-left-radius: 1.5rem;
+    }
+
+}
