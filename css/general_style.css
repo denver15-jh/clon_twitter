@@ -320,6 +320,7 @@ body{
     justify-content: center;
     align-items: center;
     text-decoration: none;
+    color: var(--color-transparent);
 }
 
 .container-modal-phone-email__icono-header-modal{
@@ -451,7 +452,7 @@ input:focus ~ .container-modal-phone-email__container-input-contador {
 }
 
 label {
-    color: var(--gray-strong);
+    color: var(--black-strong);
     font-size: 1.6rem;
     font-weight: normal;
     position: absolute;
@@ -470,6 +471,7 @@ label {
 .container-modal-phone-email__cambio-phone-email{
     font-size: 1.5rem;
     color: var(--blue-middel);
+    text-align: right;
 }
 
 .container-modal-phone-email__container-titulo-date{
