@@ -45,11 +45,11 @@
     }
 
     .container-modal-phone-email__body-container-formulario-modal{
-        height: 60vh;
+        height: 80vh;
     }
 
     .container-modal-phone-email__container-formulario-modal{
-        padding: 0 3.2rem;
+        padding: 0 3.2rem 10rem 3.2rem;
     }
 
     .container-modal-phone-email__container-input-date{
@@ -60,8 +60,7 @@
         display: flex;
     }
 
-    .container-modal-phone-email__footer-container-formulario-modal{
-        position: static;
+    .container-modal-phone-email__body-container-formulario-modal, .container-modal-phone-email__footer-container-formulario-modal{
         border-bottom-right-radius: 1.5rem;
         border-bottom-left-radius: 1.5rem;
     }
