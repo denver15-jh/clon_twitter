@@ -291,7 +291,7 @@ body{
     position: relative;
   }
 
-  #container-modal-phone-email:target{
+  #container-modal-phone-email:target, #container-modal-login:target{
     opacity: 1;
     pointer-events: auto;
   }
