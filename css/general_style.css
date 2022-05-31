@@ -94,11 +94,15 @@ body{
 
 /* social - botones */
 
-.container-seccion1-seccion2__redirect-google, .container-seccion1-seccion2__redirect-apple, .container-seccion1-seccion2__redirect-phone-email, .container-seccion1-seccion2__redirect-login, .container-modal-phone-email__redirect-boton-siguiente{
+.container-seccion1-seccion2__redirect-google, .container-seccion1-seccion2__redirect-apple, 
+.container-seccion1-seccion2__redirect-phone-email, .container-seccion1-seccion2__redirect-login, 
+.container-modal-phone-email__redirect-boton-siguiente{
     text-decoration: none;
 }
 
-.container-seccion1-seccion2__container-google, .container-seccion1-seccion2__container-apple, .container-seccion1-seccion2__container-phone-email, .container-seccion1-seccion2__container-login, .container-modal-phone-email__container-boton-siguiente{
+.container-seccion1-seccion2__container-google, .container-seccion1-seccion2__container-apple, 
+.container-seccion1-seccion2__container-phone-email, .container-seccion1-seccion2__container-login, 
+.container-modal-phone-email__container-boton-siguiente{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -122,7 +126,9 @@ body{
     margin-right: 1rem;
 }
 
-.container-seccion1-seccion2__titulo-google, .container-seccion1-seccion2__titulo-apple, .container-seccion1-seccion2__titulo-phone-email, .container-seccion1-seccion2__titulo-login, .container-modal-phone-email__titulo-boton-siguiente{
+.container-seccion1-seccion2__titulo-google, .container-seccion1-seccion2__titulo-apple, 
+.container-seccion1-seccion2__titulo-phone-email, .container-seccion1-seccion2__titulo-login, 
+.container-modal-phone-email__titulo-boton-siguiente{
     margin-left: 0rem;
     color: var(--black-strong);
     text-align: center;
@@ -285,7 +291,7 @@ body{
   }
 
 .container-modal-phone-email__container-formulario{
-    background-color:black;
+    background-color:var(--white-standard);
     width: 100%;
     /*width: 600px;*/
     height: 100%;
@@ -341,13 +347,21 @@ body{
     background-color: var(--white-standard);
     overflow: auto;
     height: 100vh;
-    /*height: 60vh;*/
+}
+
+.container-modal-phone-email__body-container-formulario-modal--ajuste-ancho-modal-login{
+    width: 36.4rem;
+    margin: 0 auto;
 }
 
 /* container formulario */
 
 .container-modal-phone-email__container-formulario-modal{
     padding: 0 3.2rem 15rem 3.2rem;
+}
+
+.container-modal-phone-email__container-formulario-modal-login{
+    padding: 0 3.2rem;
 }
 
 /* titulo formulario */
@@ -478,6 +492,13 @@ label {
     left: 1rem;
     top: 2.2rem;
     transition: 300ms ease all;
+    text-overflow: ellipsis;
+}
+
+.container-modal-phone-email__label-phone-email-login{
+    overflow: hidden;
+    white-space: nowrap;
+    width: 28rem;
 }
 
 /* seccion phone - email */
@@ -583,3 +604,29 @@ select {
 }
 
 /* 5.- Modal de login */
+
+.container-seccion-link-login-modal{
+    margin-top: 4rem;
+}
+
+.container-seccion-link-login-modal__texto-informativo, .container-seccion-link-login-modal-span-register{
+    font-weight: normal;
+    font-size: 1.5rem;
+}
+
+.container-seccion-link-login-modal__texto-informativo{
+    color: var(--black-strong);
+}
+
+.container-seccion-link-login-modal__link-register{
+    text-decoration: none;
+    color: var(--blue-middel);
+}
+
+.container-seccion-link-login-modal__link-register:hover{
+    text-decoration: underline;
+}
+
+.container-seccion-link-login-modal-span-register{
+    color: var(--blue-middel);
+}
