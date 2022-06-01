@@ -2,6 +2,23 @@
 
 /* mobile */
 
+@media(min-width: 364px){
+
+    /* body modal */
+
+    .container-modal-phone-email-login__body-container-formulario-modal{
+        width: 36.4rem;
+        margin: 0 auto;
+    }
+
+    /* Funcionalidad input estilo material desing */
+
+    .container-modal-phone-email-login__label-phone-email{
+        width: 28rem;
+    }
+
+}
+
 @media(min-width: 501px){
 
     /* titulo y subtitulo */
@@ -33,23 +50,27 @@
 
     /* MODAL */
 
-    .container-modal-phone-email__container-formulario{
+    .container-modal-phone-email__container-formulario, .container-modal-phone-email-login__container-formulario{
         height: auto;
         width: 60rem;
         border-radius: 1.5rem;
     }
 
-    .container-modal-phone-email__header-close-logo{
+    .container-modal-phone-email__header-close-logo, .container-modal-phone-email-login__header-close-logo{
         border-top-right-radius: 1.5rem;
         border-top-left-radius: 1.5rem;
     }
 
-    .container-modal-phone-email__body-container-formulario-modal{
+    .container-modal-phone-email__body-container-formulario-modal, .container-modal-phone-email-login__body-container-formulario-modal{
         height: 80vh;
     }
 
     .container-modal-phone-email__container-formulario-modal{
         padding: 0 3.2rem 10rem 3.2rem;
+    }
+
+    .container-modal-phone-email-login__titulo-formulario{
+        font-size: 2.8rem;
     }
 
     .container-modal-phone-email__container-input-date{

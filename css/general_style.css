@@ -96,13 +96,13 @@ body{
 
 .container-seccion1-seccion2__redirect-google, .container-seccion1-seccion2__redirect-apple, 
 .container-seccion1-seccion2__redirect-phone-email, .container-seccion1-seccion2__redirect-login, 
-.container-modal-phone-email__redirect-boton-siguiente{
+.container-modal-phone-email__redirect-boton-siguiente, .container-modal-phone-email-login__redirect-olvide-contrasena{
     text-decoration: none;
 }
 
 .container-seccion1-seccion2__container-google, .container-seccion1-seccion2__container-apple, 
 .container-seccion1-seccion2__container-phone-email, .container-seccion1-seccion2__container-login, 
-.container-modal-phone-email__container-boton-siguiente{
+.container-modal-phone-email__container-boton-siguiente, .container-modal-phone-email-login__container-olvide-contrasena{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,7 +128,7 @@ body{
 
 .container-seccion1-seccion2__titulo-google, .container-seccion1-seccion2__titulo-apple, 
 .container-seccion1-seccion2__titulo-phone-email, .container-seccion1-seccion2__titulo-login, 
-.container-modal-phone-email__titulo-boton-siguiente{
+.container-modal-phone-email__titulo-boton-siguiente, .container-modal-phone-email-login__titulo-olvide-contrasena{
     margin-left: 0rem;
     color: var(--black-strong);
     text-align: center;
@@ -149,7 +149,7 @@ body{
     font-weight: 600;
 }
 
-.container-seccion1-seccion2__container-phone-email--change-color-titulo-login{
+.container-seccion1-seccion2__container-phone-email--change-color-titulo-login, .container-modal-phone-email-login__container-phone-email--change-color-titulo-olvide-contrasena{
     font-weight: bolder;
     font-size: 1.5rem;
     color: var(--blue-middel);
@@ -275,7 +275,7 @@ body{
 
 /* 4.- Modal de registro paso 1 */
 
-.container-modal-phone-email{
+.container-modal-phone-email, .container-modal-phone-email-login{
     background-color: var(--black-opacity-1);
     position: fixed;
     top: 0;
@@ -290,12 +290,10 @@ body{
     align-items: center;
   }
 
-.container-modal-phone-email__container-formulario{
+.container-modal-phone-email__container-formulario, .container-modal-phone-email-login__container-formulario{
     background-color:var(--white-standard);
     width: 100%;
-    /*width: 600px;*/
     height: 100%;
-    /*height: none;*/
     position: relative;
   }
 
@@ -306,7 +304,7 @@ body{
 
 /* header modal */
 
-  .container-modal-phone-email__header-close-logo{
+  .container-modal-phone-email__header-close-logo, .container-modal-phone-email-login__header-close-logo{
     position: relative;
     background-color: var(--white-standard);
     height: 5rem;
@@ -317,7 +315,7 @@ body{
 
 /* iconos header */
 
-.container-modal-phone-email__container-icono-header-modal{
+.container-modal-phone-email__container-icono-header-modal, .container-modal-phone-email-login__container-icono-header-modal{
     position: absolute;
     left: 1rem;
     /*border: 1px solid blue;*/
@@ -331,27 +329,22 @@ body{
     color: var(--color-transparent);
 }
 
-.container-modal-phone-email__icono-header-modal{
+.container-modal-phone-email__icono-header-modal, .container-modal-phone-email-login__icono-header-modal{
     font-size: 2rem;
     color: var(--black-strong);
 }
 
-.container-modal-phone-email__icono-logo-header-modal{
+.container-modal-phone-email__icono-logo-header-modal, .container-modal-phone-email-login__icono-logo-header-modal{
     font-size: 3rem;
     color: var(--blue-middel);
 }
 
 /* body modal */
 
-.container-modal-phone-email__body-container-formulario-modal{
+.container-modal-phone-email__body-container-formulario-modal, .container-modal-phone-email-login__body-container-formulario-modal{
     background-color: var(--white-standard);
     overflow: auto;
     height: 100vh;
-}
-
-.container-modal-phone-email__body-container-formulario-modal--ajuste-ancho-modal-login{
-    width: 36.4rem;
-    margin: 0 auto;
 }
 
 /* container formulario */
@@ -360,23 +353,23 @@ body{
     padding: 0 3.2rem 15rem 3.2rem;
 }
 
-.container-modal-phone-email__container-formulario-modal-login{
-    padding: 0 3.2rem;
+.container-modal-phone-email-login__container-formulario-modal{
+    padding: 0 3.2rem 3.2rem 3.2rem;
 }
 
 /* titulo formulario */
 
-.container-modal-phone-email__container-titulo-formulario{
+.container-modal-phone-email__container-titulo-formulario, .container-modal-phone-email-login__container-titulo-formulario{
     margin: 2.8rem 0;
 }
-.container-modal-phone-email__titulo-formulario{
+.container-modal-phone-email__titulo-formulario, .container-modal-phone-email-login__titulo-formulario{
     color: var(--black-strong);
     font-size: 2.6rem;
 }
 
 /* formulario modal */
 
-.container-modal-phone-email__form-registrate{
+.container-modal-phone-email__form-registrate, .container-modal-phone-email-login__form-login{
     width: 100%;
 }
 
@@ -384,7 +377,8 @@ body{
 
 .container-modal-phone-email__container-input-name, .container-modal-phone-email__container-input-email,
 .container-modal-phone-email__container-input-date, .container-modal-phone-email__container-input-date-mes, 
-.container-modal-phone-email__container-input-date-dia, .container-modal-phone-email__container-input-date-ano {
+.container-modal-phone-email__container-input-date-dia, .container-modal-phone-email__container-input-date-ano,
+.container-modal-phone-email-login__container-input-email {
     position: relative;
     margin: 10px 0;
 }
@@ -402,7 +396,8 @@ body{
 
 .container-modal-phone-email__input-name, .container-modal-phone-email__input-phone-email, 
 .container-modal-phone-email__input-date, .container-modal-phone-email__input-date-mes, 
-.container-modal-phone-email__input-date-dia, .container-modal-phone-email__input-date-ano {
+.container-modal-phone-email__input-date-dia, .container-modal-phone-email__input-date-ano,
+.container-modal-phone-email-login__input-phone-email {
     background: none;
     color: var(--gray-light-2);
     font-size: 1.8rem;
@@ -495,10 +490,11 @@ label {
     text-overflow: ellipsis;
 }
 
-.container-modal-phone-email__label-phone-email-login{
+.container-modal-phone-email-login__label-phone-email{
     overflow: hidden;
     white-space: nowrap;
-    width: 28rem;
+    width: 23rem;
+    /*width: 28rem;*/
 }
 
 /* seccion phone - email */
@@ -579,7 +575,7 @@ select {
 
 /* boton footer modal */
 
-.container-modal-phone-email__boton-siguiente{
+.container-modal-phone-email__boton-siguiente, .container-modal-phone-email-login__boton-siguiente{
     background-color: var(--black-strong);
     height: 5rem;
     width: 100%;
@@ -605,28 +601,28 @@ select {
 
 /* 5.- Modal de login */
 
-.container-seccion-link-login-modal{
+.container-modal-phone-email-login__container-seccion-link-login-modal{
     margin-top: 4rem;
 }
 
-.container-seccion-link-login-modal__texto-informativo, .container-seccion-link-login-modal-span-register{
+.container-modal-phone-email-login__container-seccion-link-login-modal__texto-informativo, .container-modal-phone-email-login__container-seccion-link-login-modal-span-register{
     font-weight: normal;
     font-size: 1.5rem;
 }
 
-.container-seccion-link-login-modal__texto-informativo{
+.container-modal-phone-email-login__container-seccion-link-login-modal__texto-informativo{
     color: var(--black-strong);
 }
 
-.container-seccion-link-login-modal__link-register{
+.container-modal-phone-email-login__container-seccion-link-login-modal__link-register{
     text-decoration: none;
     color: var(--blue-middel);
 }
 
-.container-seccion-link-login-modal__link-register:hover{
+.container-modal-phone-email-login__container-seccion-link-login-modal__link-register:hover{
     text-decoration: underline;
 }
 
-.container-seccion-link-login-modal-span-register{
+.container-modal-phone-email-login__container-seccion-link-login-modal-span-register{
     color: var(--blue-middel);
 }
