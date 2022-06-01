@@ -183,6 +183,15 @@ body{
     margin-bottom: 2rem;
 }
 
+.container-seccion1-seccion2__link-terminos{
+    text-decoration: none;
+}
+
+.container-seccion1-seccion2__link-terminos:hover{
+    text-decoration: underline;
+    color: var(--blue-middel);
+}
+
 .container-seccion1-seccion2__terminos, .container-seccion1-seccion2__span-terminos{
     font-size: 1.1rem;
     color: var(--gray-strong);
@@ -318,7 +327,6 @@ body{
 .container-modal-phone-email__container-icono-header-modal, .container-modal-phone-email-login__container-icono-header-modal{
     position: absolute;
     left: 1rem;
-    /*border: 1px solid blue;*/
     height: 3.5rem;
     width: 3.5rem;
     border-radius: 100%;
@@ -494,7 +502,6 @@ label {
     overflow: hidden;
     white-space: nowrap;
     width: 23rem;
-    /*width: 28rem;*/
 }
 
 /* seccion phone - email */
@@ -581,7 +588,6 @@ select {
     width: 100%;
     border: 0.1rem solid var(--black-strong);
     border-radius: 5rem;
-    /*margin: 1rem 0;*/
     padding: 1rem;
     color: var(--white-standard);
     text-align: center;
@@ -605,7 +611,8 @@ select {
     margin-top: 4rem;
 }
 
-.container-modal-phone-email-login__container-seccion-link-login-modal__texto-informativo, .container-modal-phone-email-login__container-seccion-link-login-modal-span-register{
+.container-modal-phone-email-login__container-seccion-link-login-modal__texto-informativo, 
+.container-modal-phone-email-login__container-seccion-link-login-modal-span-register{
     font-weight: normal;
     font-size: 1.5rem;
 }
